@@ -1,1 +1,1 @@
-require("bufferline").setup{}
+local bufferline = require("bufferline").setup()

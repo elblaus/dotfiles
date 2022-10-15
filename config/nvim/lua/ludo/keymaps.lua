@@ -20,3 +20,7 @@ map("n", "<C-Up>", ":resize +2<CR>", opt)
 map("n", "<C-Down>", ":resize -2<CR>", opt)
 map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
+
+-- FILE EXPLORER
+map("n", "<leader>e", ":Lexplore 30<cr>" ,opt)
+
