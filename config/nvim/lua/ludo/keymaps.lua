@@ -1,3 +1,4 @@
+-- LOCAL VARIABLES FOR BREVITY
 local map = vim.keymap.set
 local opt = { silent = true }
 
@@ -23,4 +24,3 @@ map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
 
 -- FILE EXPLORER
 map("n", "<leader>e", ":Lexplore 30<cr>" ,opt)
-

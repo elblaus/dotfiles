@@ -1,7 +1,9 @@
-local scnvim = require 'scnvim'
+--vim.cmd("autocmd FileType scnvim setlocal wrap")
+
+local scnvim = require('scnvim')
 local map = scnvim.map
 local map_expr = scnvim.map_expr
-scnvim.setup {
+scnvim.setup({
   keymaps = {
     ['<M-e>'] = map('editor.send_line', {'i', 'n'}),
     ['<C-e>'] = {
@@ -28,4 +30,4 @@ scnvim.setup {
       enabled = true,
     },
   },
-}
+})

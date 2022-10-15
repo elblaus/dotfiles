@@ -1,3 +1,5 @@
+print("OPTIONS")
+
 local set = vim.opt
 
 -- LEADER
@@ -25,8 +27,8 @@ set.signcolumn = 'yes'
 set.clipboard = "unnamedplus"
 
 -- SPLITS
-set.splitbelow = true
-set.splitright = true
+-- set.splitbelow = true
+-- set.splitright = true
 
 -- SCROLLOFF
 set.scrolloff = 12
