@@ -14,9 +14,9 @@ scnvim.setup({
     ['<M-CR>'] = map('postwin.toggle', 'i'),
     ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
     ['<C-k>'] = map('signature.show', {'n', 'i'}),
-    ['<F12>'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
-    ['<leader>st'] = map('sclang.start'),
-    ['<leader>sk'] = map('sclang.recompile'),
+    ['<leader>st'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
+    ['<leader>sc'] = map('sclang.start'),
+    ['<leader>sr'] = map('sclang.recompile'),
     ['<F1>'] = map_expr('s.boot'),
     ['<F2>'] = map_expr('s.meter'),
   },
@@ -28,6 +28,8 @@ scnvim.setup({
   postwin = {
     float = {
       enabled = true,
+      height = 100000,
+      width = 70,
     },
   },
 })
