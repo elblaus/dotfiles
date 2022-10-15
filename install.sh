@@ -3,6 +3,6 @@
 cd config
 for dir in *
 do
-	rm -r ~/.config/$dir
-	ln -s ./"$dir" ~/.config/$dir
+	rm -r "~/.config/$dir"
+	ln -s "$PWD/$dir" ~/.config/
 done
