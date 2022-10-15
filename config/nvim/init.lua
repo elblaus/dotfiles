@@ -1,4 +1,6 @@
 require("ludo.options")
 require("ludo.keymaps")
 require("ludo.plugins")
-
+require("ludo.colorscheme")
+require("ludo.bufferline")
+require("ludo.scnvim")

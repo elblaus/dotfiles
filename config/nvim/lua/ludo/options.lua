@@ -34,3 +34,7 @@ set.sidescrolloff = 8
 
 -- HIGHLIGHT CURRENT LINE
 set.cursorline = true
+
+-- TERMINAL COLORS
+set.termguicolors = true
+
