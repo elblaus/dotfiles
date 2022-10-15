@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ludo/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  colorschemes = {
+    loaded = true,
+    path = "/home/ludo/.local/share/nvim/site/pack/packer/start/colorschemes",
+    url = "https://github.com/lunarvim/colorschemes"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/ludo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
