@@ -1,4 +1,4 @@
--- vim.cmd [[packadd packer.nvim]]
+vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}

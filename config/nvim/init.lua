@@ -1,3 +1,4 @@
-require("ludo.basics")
+require("ludo.options")
+require("ludo.keymaps")
 require("ludo.plugins")
-require("ludo.plugin-config")
+

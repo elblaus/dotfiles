@@ -21,9 +21,16 @@ set.signcolumn = 'yes'
 
 -- SEARCH
 
+-- CUT & PASTE
+set.clipboard = "unnamedplus"
+
+-- SPLITS
+set.splitbelow = true
+set.splitright = true
 
 -- SCROLLOFF
 set.scrolloff = 12
 set.sidescrolloff = 8
 
 -- HIGHLIGHT CURRENT LINE
+set.cursorline = true
