@@ -3,7 +3,8 @@ local map = vim.keymap.set
 local opt = { silent = true }
 
 -- SET LEADER
-vim.g.mapleader = " "
+--vim.cmd('let mapleader = " "')
+--vim.cmd('let maplocalleader = " "')
 
 -- NAVIGATE BUFFERS
 map("n", "<A-l>", ":bnext<cr>", opt)
