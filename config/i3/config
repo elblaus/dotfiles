@@ -177,17 +177,39 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	font pango:IBM Plex Mono 15
+	font pango:IBM Plex Mono 12
 	mode hide
 	hidden_state hide
 	modifier Mod4
-        status_command i3status
+    status_command i3status
+#    workspace_min_width 150
+    colors {
+        background #333333
+        statusline #ffffff
+        separator #666666
+
+        #colorclass        border  bg      text
+        focused_workspace  #888888 #000000 #ffffff
+        active_workspace   #222222 #000000 #ffffff
+        inactive_workspace #222222 #000000 #888888
+        urgent_workspace   #ff3300 #ff3300 #ffffff
+        binding_mode       #ff3300 #ff3300 #ffffff
+    }
+
 }
 
-default_border none
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #000000 #000000 #ffffff #2e9ef4   #000000
+client.focused_inactive #000000 #000000 #ffffff #484e50   #000000
+client.unfocused        #000000 #000000 #888888 #292d2e   #000000
+client.urgent           #000000 #000000 #ffffff #900000   #000000
+client.placeholder      #000000 #000000 #ffffff #000000   #000000
+
+client.background       #000000
+
+default_border pixel 6
 hide_edge_borders both
-
-
 
 exec_always --no-startup-id xset r rate 220 25
 exec_always --no-startup-id /usr/libexec/gsd-xsettings
