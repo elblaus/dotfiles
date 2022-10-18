@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cp aliases.zsh ~/.oh-my-zsh/custom
+
 cd config
 for dir in *
 do
