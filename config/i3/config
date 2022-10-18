@@ -217,3 +217,5 @@ exec_always "setxkbmap -layout us,se"
 exec_always "setxkbmap -option 'grp:shifts_toggle'"
 
 bindsym $mod+d exec --no-startup-id "rofi -modi window,drun,run -show combi"
+
+exec --no-startup-id compton
