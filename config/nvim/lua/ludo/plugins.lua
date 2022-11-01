@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
     use 'lunarvim/colorschemes'
     use {
 	    'akinsho/bufferline.nvim', 
-    tag = "v2.*", 
+        tag = "v3.*",
 	    requires = 'kyazdani42/nvim-web-devicons'
     }
     use {
