@@ -1,27 +1,25 @@
--- LOCAL VARIABLES FOR BREVITY
-local map = vim.keymap.set
-local opt = { silent = true }
-
 -- SET LEADER
---vim.cmd('let mapleader = " "')
---vim.cmd('let maplocalleader = " "')
+vim.keymap.setleader = " "
 
 -- NAVIGATE BUFFERS
-map("n", "<A-l>", ":bnext<cr>", opt)
-map("n", "<A-h>", ":bprevious<cr>", opt)
-map("n", "<A-q>", ":bdelete<cr>", opt)
+vim.keymap.set("n", "<A-l>", ":bnext<cr>")
+vim.keymap.set("n", "<A-h>", ":bprevious<cr>")
+vim.keymap.set("n", "<A-q>", ":bdelete<cr>")
 
 -- NAVIGATE WINDOWS
-map("n", "<C-h>", "<C-w>h", opt)
-map("n", "<C-j>", "<C-w>j", opt)
-map("n", "<C-k>", "<C-w>k", opt)
-map("n", "<C-l>", "<C-w>l", opt)
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- RESIZE WINDOWS
-map("n", "<C-Up>", ":resize +2<CR>", opt)
-map("n", "<C-Down>", ":resize -2<CR>", opt)
-map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
-map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
+vim.keymap.set("n", "<C-Up>", ":resize +2<CR>")
+vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
+vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
+vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 
 -- FILE EXPLORER
-map("n", "<leader>e", ":Lexplore 30<cr>" ,opt)
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+
+-- F1 ESCAPE 
+vim.keymap.set("i", "<F1>", "<ESC>") 

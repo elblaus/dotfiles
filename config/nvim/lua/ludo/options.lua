@@ -1,89 +1,47 @@
-local set = vim.opt
-
 -- INDENTATION
-set.tabstop = 4
-set.softtabstop = 4
-set.shiftwidth = 4
-set.expandtab = true
-set.smartindent = true 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true 
 
 -- LINE BREAK
-set.wrap = true
-set.linebreak = true
+vim.opt.wrap = true
+vim.opt.linebreak = true
 
 -- LINE NUMBERS & SIGN COLUMN
-set.nu = true
-set.relativenumber = true
-set.signcolumn = 'yes'
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = 'yes'
 
 -- SEARCH
-set.ignorecase = true
-set.smartcase = true
-set.showmatch = false
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 -- CUT & PASTE
-set.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
 -- SPLITS
-set.splitbelow = true
-set.splitright = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
 -- SCROLLOFF
-set.scrolloff = 16
-set.sidescrolloff = 8
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 
 -- HIGHLIGHT CURRENT LINE
-set.cursorline = true
+vim.opt.cursorline = true
 
 -- TERMINAL COLORS
-set.termguicolors = true
+vim.opt.termguicolors = true
 
--- HIDE STATUS LINE
-set.laststatus = 0
+-- STATUS LINE
+vim.opt.laststatus = 3
 
 -- ENABLE MOUSE
-set.mouse = 'a'
+vim.opt.mouse = 'a'
 
-
-
-
-
-
-
-
---[[
-map('n', 'coc', function()
-  vim.wo.cursorline = not vim.wo.cursorline
-end)
-
-map('n', 'cox', function()
-  vim.wo.cursorcolumn = not vim.wo.cursorcolumn
-  vim.wo.cursorline = vim.wo.cursorcolumn
-end)
-
-map('n', 'con', function()
-  vim.wo.number = not vim.wo.number
-end)
-
-map('n', 'cor', function()
-  vim.wo.relativenumber = not vim.wo.relativenumber
-end)
-
-map('n', 'cos', function()
-  vim.wo.spell = not vim.wo.spell
-end)
-
-map('n', 'col', function()
-  vim.wo.list = not vim.wo.list
-end)
-
-map('n', 'coh', function()
-  vim.o.hlsearch = not vim.o.hlsearch
-end)
-
-map('n', 'cow', function()
-  vim.o.wrap = not vim.o.wrap
-end)
-]]--
+-- UPDATE TIME
+vim.opt.updatetime = 50
 
 

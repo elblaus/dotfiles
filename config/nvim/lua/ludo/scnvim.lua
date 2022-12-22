@@ -33,3 +33,8 @@ scnvim.setup({
     },
   },
 })
+
+--- temp file 
+vim.keymap.set('n', '<leader>xxx', function()
+
+end)
