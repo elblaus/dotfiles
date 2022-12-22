@@ -14,11 +14,12 @@ scnvim.setup({
     ['<M-CR>'] = map('postwin.toggle', 'i'),
     ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
     ['<C-k>'] = map('signature.show', {'n', 'i'}),
+    --['<leader>st'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
     ['<leader>st'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
     ['<leader>sc'] = map('sclang.start'),
     ['<leader>sr'] = map('sclang.recompile'),
-    ['<F1>'] = map_expr('s.boot'),
-    ['<F2>'] = map_expr('s.meter'),
+    --['<F1>'] = map_expr('s.boot'),
+    --['<F2>'] = map_expr('s.meter'),
   },
   editor = {
     highlight = {
@@ -35,6 +36,13 @@ scnvim.setup({
 })
 
 --- temp file 
-vim.keymap.set('n', '<leader>xxx', function()
+vim.keymap.set('n', '<leader>ss', function()
+    local template, fileName
 
+    template = "~/Dropbox/sketches/supercollider/template.scd"
+    fileName = os.date("%Y%m%d-%H%M%S", os.time())
+    fileName = "~/Dropbox/sketches/supercollider/" .. fileName .. ".scd";
+    os.execute("cp " .. template .. " " .. fileName);
+    vim.api.nvim_command("e " .. fileName)
+    vim.api.nvim_command("SCNvimStart")
 end)
