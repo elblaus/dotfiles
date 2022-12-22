@@ -35,7 +35,7 @@ scnvim.setup({
   },
 })
 
---- temp file 
+--- sketch file 
 vim.keymap.set('n', '<leader>ss', function()
     local template, fileName
 
