@@ -15,11 +15,9 @@ scnvim.setup({
     ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
     ['<C-k>'] = map('signature.show', {'n', 'i'}),
     --['<leader>st'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
-    ['<leader>st'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
+    ['<leader>st'] = map('sclang.hard_stop', {'n', 'x'}),
     ['<leader>sc'] = map('sclang.start'),
     ['<leader>sr'] = map('sclang.recompile'),
-    --['<F1>'] = map_expr('s.boot'),
-    --['<F2>'] = map_expr('s.meter'),
   },
   editor = {
     highlight = {
@@ -27,11 +25,14 @@ scnvim.setup({
     },
   },
   postwin = {
-    float = {
-      enabled = true,
-      height = 100000,
-      width = 70,
-    },
+      scrollback = '10000',
+      horizontal = true,
+      float = {
+        enabled = true,
+        width = vim.o.columns,
+        height = 24,
+        row = vim.o.lines,
+      },
   },
 })
 

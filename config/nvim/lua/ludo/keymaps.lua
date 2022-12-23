@@ -1,5 +1,5 @@
 -- SET LEADER
-vim.keymap.setleader = " "
+vim.g.mapleader = " "
 
 -- NAVIGATE BUFFERS
 vim.keymap.set("n", "<A-l>", ":bnext<cr>")
