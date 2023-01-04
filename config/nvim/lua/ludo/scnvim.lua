@@ -1,4 +1,4 @@
---vim.cmd("autocmd FileType scnvim setlocal wrap")
+vim.cmd("autocmd FileType scnvim setlocal wrap")
 
 local scnvim = require('scnvim')
 local map = scnvim.map
@@ -23,16 +23,16 @@ scnvim.setup({
       color = 'IncSearch',
     },
   },
-  postwin = {
-      scrollback = '10000',
-      horizontal = true,
-      float = {
-        enabled = true,
+--  postwin = {
+--      scrollback = '10000',
+--      horizontal = true,
+--      float = {
+--        enabled = true,
 --        width = vim.o.columns,
 --        height = 24,
 --        row = vim.o.lines,
-      },
-  },
+--      },
+--  },
 })
 
 
