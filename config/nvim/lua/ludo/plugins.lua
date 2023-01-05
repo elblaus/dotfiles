@@ -9,11 +9,6 @@ return require('packer').startup(function(use)
         tag = '0.1.0',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use {
-        "madskjeldgaard/sclang-format.nvim", 
-        requires = "nvim-treesitter/nvim-treesitter", 
-        config = function() require"sclang-format".setup() end
-    }
     use { 'davidgranstrom/scnvim' }
     use('nvim-treesitter/nvim-treesitter', { run = 'TSUpdate'})
     use {

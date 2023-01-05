@@ -32,6 +32,9 @@ vim.opt.sidescrolloff = 8
 -- HIGHLIGHT CURRENT LINE
 vim.opt.cursorline = true
 
+-- HIGHLIGHT COLUMN 80
+vim.opt.colorcolumn = "80"
+
 -- TERMINAL COLORS
 vim.opt.termguicolors = true
 
@@ -43,5 +46,3 @@ vim.opt.mouse = 'a'
 
 -- UPDATE TIME
 vim.opt.updatetime = 50
-
-
