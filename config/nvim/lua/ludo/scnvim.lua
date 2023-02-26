@@ -36,7 +36,7 @@ scnvim.setup({
 })
 
 
---- sketch file 
+--- sketch file
 vim.keymap.set('n', '<leader>ss', function()
     local template, fileName
 
@@ -46,4 +46,9 @@ vim.keymap.set('n', '<leader>ss', function()
     os.execute("cp " .. template .. " " .. fileName)
     vim.api.nvim_command("e " .. fileName)
     vim.api.nvim_command("SCNvimStart")
+end)
+
+--- edit settings
+vim.keymap.set('n', '<leader>sp', function()
+    vim.api.nvim_command("e " .. "~/.config/SuperCollider/sclang_conf.yaml");
 end)
