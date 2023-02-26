@@ -1,11 +1,12 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    use 'ntpeters/vim-better-whitespace'
     use 'wbthomason/packer.nvim'
     use 'airblade/vim-gitgutter'
     use 'lunarvim/colorschemes'
     use {
-	    'nvim-telescope/telescope.nvim', 
+	    'nvim-telescope/telescope.nvim',
         tag = '0.1.0',
         requires = { {'nvim-lua/plenary.nvim'} }
     }

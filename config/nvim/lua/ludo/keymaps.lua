@@ -21,5 +21,8 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 -- FILE EXPLORER
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
--- F1 ESCAPE 
-vim.keymap.set("i", "<F1>", "<ESC>") 
+-- F1 ESCAPE
+vim.keymap.set("i", "<F1>", "<ESC>")
+
+-- TRAILING WHITESPACE
+vim.keymap.set('n', '<Leader>wt', [[:%s/\s\+$//e<cr>]])
