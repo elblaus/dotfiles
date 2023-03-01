@@ -3,7 +3,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.smartindent = true 
+vim.opt.smartindent = true
 
 -- LINE BREAK
 vim.opt.wrap = true
@@ -31,6 +31,7 @@ vim.opt.sidescrolloff = 8
 
 -- HIGHLIGHT CURRENT LINE
 vim.opt.cursorline = true
+--vim.opt.cursorlineopt = "both"
 
 -- HIGHLIGHT COLUMN 80
 vim.opt.colorcolumn = "80"
@@ -46,3 +47,6 @@ vim.opt.mouse = 'a'
 
 -- UPDATE TIME
 vim.opt.updatetime = 50
+
+-- SPLITS
+vim.opt.equalalways = true

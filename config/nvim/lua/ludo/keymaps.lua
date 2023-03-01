@@ -5,6 +5,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<A-l>", ":bnext<cr>")
 vim.keymap.set("n", "<A-h>", ":bprevious<cr>")
 vim.keymap.set("n", "<A-q>", ":bdelete<cr>")
+vim.keymap.set("n", "<A-j>", "<C-^>")
 
 -- NAVIGATE WINDOWS
 vim.keymap.set("n", "<C-h>", "<C-w>h")
