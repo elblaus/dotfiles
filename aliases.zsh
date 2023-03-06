@@ -2,9 +2,6 @@
 alias vim="nvim"
 export VISUAL=nvim
 export EDITOR=nvim
-vf() {
-    nvim $(fzf --preview="cat {}")
-}
 
 # QUICK JUMP TO TEXT FILES
 alias todo="vim ~/Dropbox/txt/todo.md"
@@ -28,10 +25,12 @@ alias cam="git commit -am"
 
 # YOUTUBE-DL
 alias dlm='youtube-dl -f mp4 -o "~/Downloads/%(title)s.%(ext)s"'
-alias dla='youtube-dl -x --audio-format=flac -o "~/Downloads/%(title)s.%(ext)s"' 
+alias dla='youtube-dl -x --audio-format=flac -o "~/Downloads/%(title)s.%(ext)s"'
 
 # MY PUBLIC IP
 alias myip="curl ipinfo.io/ip"
 
 # PS AUX
 alias pg="ps aux | grep"
+
+
