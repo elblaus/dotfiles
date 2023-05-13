@@ -32,5 +32,7 @@ alias myip="curl ipinfo.io/ip"
 
 # PS AUX
 alias pg="ps aux | grep"
-
+
+# Update
+alias up="sudo apt update && sudo apt upgrade -y"
 
