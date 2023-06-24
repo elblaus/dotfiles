@@ -33,6 +33,8 @@ alias myip="curl ipinfo.io/ip"
 # PS AUX
 alias pg="ps aux | grep"
 
-# Update
+# UPDATE
 alias up="sudo apt update && sudo apt upgrade -y"
 
+# WEB SERVER
+alias serve="python3 -m http.server 8000"
