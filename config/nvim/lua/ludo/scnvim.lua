@@ -23,16 +23,17 @@ scnvim.setup({
       color = 'IncSearch',
     },
   },
---  postwin = {
---      scrollback = '10000',
---      horizontal = true,
---      float = {
---        enabled = true,
---        width = vim.o.columns,
---        height = 24,
---        row = vim.o.lines,
---      },
---  },
+  postwin = {
+      scrollback = 10000,
+      --horizontal = true,
+      float = {
+        enabled = true,
+        width = vim.o.columns / 3,
+        height = vim.o.lines - 4,
+        --row = vim.o.lines - 30,
+        --column = 4,
+      },
+  },
 })
 
 
