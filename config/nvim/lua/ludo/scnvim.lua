@@ -24,15 +24,21 @@ scnvim.setup({
     },
   },
   postwin = {
+      highlight = true,
       scrollback = 10000,
-      --horizontal = true,
-      float = {
-        enabled = true,
-        width = vim.o.columns / 3,
-        height = vim.o.lines - 4,
-        --row = vim.o.lines - 30,
-        --column = 4,
-      },
+      horizontal = true,
+      direction = 'bot',
+      --float = {
+        --enabled = false,
+        --width = function()
+            --return (vim.o.columns / 2) - 10
+        --end,
+        --height = function()
+            --return vim.o.lines - 4
+        --end,
+        ----row = vim.o.lines - 30,
+        ----col = 0,
+      --},
   },
 })
 
