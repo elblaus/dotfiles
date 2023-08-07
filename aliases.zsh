@@ -40,4 +40,4 @@ alias up="sudo apt update && sudo apt upgrade -y"
 alias serve="python3 -m http.server 8000"
 
 # BACKUP GIT
-alias bgit="sh ~/Dropbox/gir-backup/pull.sh"
+alias bgit="sh ~/Dropbox/git-backup/pull.sh"
