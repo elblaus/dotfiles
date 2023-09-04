@@ -55,6 +55,11 @@ vim.keymap.set('n', '<leader>ss', function()
     vim.api.nvim_command("SCNvimStart")
 end)
 
+--- edit startup
+vim.keymap.set('n', '<leader>su', function()
+    vim.api.nvim_command("e " .. "~/.config/SuperCollider/startup.scd");
+end)
+
 --- edit settings
 vim.keymap.set('n', '<leader>sp', function()
     vim.api.nvim_command("e " .. "~/.config/SuperCollider/sclang_conf.yaml");
