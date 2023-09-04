@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# OPTIONS
 generic=false
 while getopts 'g' OPTION; do
     case "$OPTION" in
@@ -15,7 +16,7 @@ set +x
 cd config
 for dir in *
 do
-	rm -r "~/.config/$dir"
+	rm -rf "~/.config/$dir"
 	ln -s "$PWD/$dir" ~/.config/
 done
 cd ..
