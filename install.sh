@@ -13,7 +13,7 @@ set +x
 
 # CONFIG FOLDER LINKS
 cd config
-for dir in config/*
+for dir in *
 do
 	rm -r "~/.config/$dir"
 	ln -s "$PWD/$dir" ~/.config/
