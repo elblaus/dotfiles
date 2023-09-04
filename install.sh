@@ -16,7 +16,7 @@ set +x
 cd config
 for dir in *
 do
-	rm -rf "~/.config/$dir"
+	rm -rf ~/.config/$dir
 	ln -s "$PWD/$dir" ~/.config/
 done
 cd ..
