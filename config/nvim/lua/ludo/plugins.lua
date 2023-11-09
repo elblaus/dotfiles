@@ -14,7 +14,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'tpope/vim-surround'
     use 'bennypowers/splitjoin.nvim'
-    use 'ntpeters/vim-better-whitespace'
+    --use 'ntpeters/vim-better-whitespace'
     use 'wbthomason/packer.nvim'
     use 'airblade/vim-gitgutter'
     use 'lunarvim/colorschemes'

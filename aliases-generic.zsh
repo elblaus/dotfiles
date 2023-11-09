@@ -12,4 +12,4 @@ alias cam="git commit -am"
 alias pg="ps aux | grep"
 
 # UPDATE
-alias up="sudo apt update && sudo apt upgrade -y"
+alias up="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
