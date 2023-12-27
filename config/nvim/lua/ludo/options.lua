@@ -19,7 +19,8 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 -- CUT & PASTE
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
+vim.cmd("set clipboard+=unnamedplus")
 
 -- SPLITS
 vim.opt.splitbelow = true
